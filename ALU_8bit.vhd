@@ -31,9 +31,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
-USE ieee.numeric_std.ALL;
+
+USE IEEE.NUMERIC_STD.ALL;
 
 ENTITY ALU_8bit IS
     PORT (
