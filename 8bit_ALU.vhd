@@ -4,7 +4,7 @@
 -- 
 -- Create Date: 15.02.2025 11:09:29
 -- Design Name: 
--- Module Name: 8-bit_ALU - Behavioural
+-- Module Name: 8bit_ALU - Behavioural
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -35,16 +35,16 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-ENTITY 8-bit_ALU IS
+ENTITY 8bit_ALU IS
     PORT (
         A, B     : IN  STD_LOGIC_VECTOR(7 DOWNTO 0);
         ch       : IN  STD_LOGIC_VECTOR(2 DOWNTO 0);
         ans   : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
         carry,zero : OUT STD_LOGIC
     );
-END 8-bit_ALU;
+END 8bit_ALU;
 
-ARCHITECTURE Behavioural OF 8-bit_ALU IS
+ARCHITECTURE Behavioural OF 8bit_ALU IS
     SIGNAL store : STD_LOGIC_VECTOR(7 DOWNTO 0);
 BEGIN
     PROCESS (A, B, ch)
